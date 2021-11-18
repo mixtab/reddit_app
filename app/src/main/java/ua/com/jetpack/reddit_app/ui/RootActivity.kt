@@ -1,7 +1,8 @@
-package ua.com.jetpack.reddit_app
+package ua.com.jetpack.reddit_app.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import ua.com.jetpack.reddit_app.R
 import ua.com.jetpack.reddit_app.databinding.ActivityRootBinding
 
 class RootActivity : AppCompatActivity(){
