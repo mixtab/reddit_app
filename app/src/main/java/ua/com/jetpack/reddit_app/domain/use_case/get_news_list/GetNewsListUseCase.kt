@@ -15,13 +15,13 @@ class GetNewsListUseCase @Inject constructor(
 ) {
     operator fun invoke(): Flow<Resource<NewsList>> = flow {
         try {
-            emit(Resource.Loading())
+            emit(Resource.Loading<NewsList>())
             val listNews = repository.getListNews().toNewsList()
-            emit(Resource.Success(listNews))
+            emit(Resource.Success<NewsList>(listNews))
         } catch (e: HttpException) {
-            emit(Resource.Error(e.localizedMessage?:"ERROR"))
+            emit(Resource.Error<NewsList>(e.localizedMessage?:"ERROR"))
         } catch (e: HttpException) {
-            emit(Resource.Error("Please check your internet connection."))
+            emit(Resource.Error<NewsList>("Please check your internet connection."))
         }
     }
 }

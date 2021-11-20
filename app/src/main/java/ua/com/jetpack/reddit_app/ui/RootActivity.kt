@@ -2,15 +2,18 @@ package ua.com.jetpack.reddit_app.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import ua.com.jetpack.reddit_app.R
+import dagger.hilt.android.AndroidEntryPoint
 import ua.com.jetpack.reddit_app.databinding.ActivityRootBinding
 
-class RootActivity : AppCompatActivity(){
-
-    val binding = ActivityRootBinding.inflate(layoutInflater)
+@AndroidEntryPoint
+class RootActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityRootBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_root)
+        //setTheme(R.style.Theme_PublicApiApp)
+        binding = ActivityRootBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
     }
 }

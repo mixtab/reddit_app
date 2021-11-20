@@ -4,6 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Mixa/AndroidStudioProjects/reddit_app/app/src/main/res/layout/activity_main.xml" value="0.17147922998986828" />
+        <entry key="..\:/Users/Mixa/AndroidStudioProjects/reddit_app/app/src/main/res/layout/activity_root.xml" value="0.1" />
+        <entry key="..\:/Users/Mixa/AndroidStudioProjects/reddit_app/app/src/main/res/layout/fragment_news.xml" value="0.16" />
+        <entry key="..\:/Users/Mixa/AndroidStudioProjects/reddit_app/app/src/main/res/layout/item_news.xml" value="0.33" />
       </map>
     </option>
   </component>
