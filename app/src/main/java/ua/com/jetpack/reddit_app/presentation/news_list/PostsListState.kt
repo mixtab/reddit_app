@@ -1,10 +1,10 @@
 package ua.com.jetpack.reddit_app.presentation.news_list
 
-import ua.com.jetpack.reddit_app.domain.model.NewsList
+import ua.com.jetpack.reddit_app.domain.model.Posts
 
-class NewsListState(
+class PostsListState(
     val isLoading: Boolean = false,
-    val news: NewsList? = null,
+    val news: Posts? = null,
     val error: String = ""
 ) {
 }
