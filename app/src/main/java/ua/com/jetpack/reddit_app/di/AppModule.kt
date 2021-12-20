@@ -8,8 +8,8 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import ua.com.jetpack.reddit_app.common.Constants
 import ua.com.jetpack.reddit_app.data.remote.RedditAppApi
-import ua.com.jetpack.reddit_app.data.repository.NewsRepositoryImpl
-import ua.com.jetpack.reddit_app.domain.repository.NewsRepository
+import ua.com.jetpack.reddit_app.data.repository.PostRepositoryImpl
+import ua.com.jetpack.reddit_app.domain.repository.PostsRepository
 import javax.inject.Singleton
 
 @Module
@@ -28,8 +28,8 @@ object AppModule {
 
     @Provides
     @Singleton
-    fun provideNewsRepository(api: RedditAppApi):NewsRepository{
-        return NewsRepositoryImpl(api)
+    fun provideNewsRepository(api: RedditAppApi):PostsRepository{
+        return PostRepositoryImpl(api)
     }
 
 }
