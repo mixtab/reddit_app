@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import ua.com.jetpack.reddit_app.extentions.dpToPx
 
 
-class NewsItemDecorator : RecyclerView.ItemDecoration() {
+class PostsItemDecorator : RecyclerView.ItemDecoration() {
     override fun getItemOffsets(
         outRect: Rect,
         view: View,
